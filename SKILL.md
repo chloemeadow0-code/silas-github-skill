@@ -1,11 +1,11 @@
 ---
 name: github
- description: GitHub仓库管理技能，用于创建仓库、推送文件、管理代码等操作
+description: GitHub仓库管理技能，用于创建仓库、推送文件、管理代码等操作
 ---
 
 # GitHub 仓库管理技能
 
-版本 v1.0 | 2026-05-03
+版本 v1.1 | 2026-05-03
 
 ## 一、创建仓库
 
@@ -34,9 +34,9 @@ name: github
 
 1. list_files(repo, path, recursive)
 2. list_repos查看所有仓库
-3. get_file读取具体文件
 
 ## 六、禁忌
 
 不推送敏感信息！token、密码不能提交！
 不删除master/main分支！
+不准调用get_server_info！会爆上下文！
